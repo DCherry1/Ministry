@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry Resources - Index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a clean, modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Even lighter gray for the background */
+        }
+        .card-hover-effect {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-5xl mx-auto">
+        <!-- Header Section -->
+        <header class="mb-10 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800">Ministry Resources</h1>
+            <p class="mt-2 text-lg text-slate-600">A collection of outlines and tools for our field service.</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main>
+            <h2 class="text-xl font-semibold text-slate-700 mb-6 border-b pb-2">Available Outlines</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card for Field Service Meeting Outline -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover-effect flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <div class="text-2xl mb-2">🗓️</div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2">Field Service Meeting</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            <strong>Theme:</strong> Adjusting Our Language to Reach the Heart. An outline focusing on using friendlier expressions.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-4">
+                        <!-- In a real application, this would link to the meeting outline HTML file -->
+                        <a href="#" onclick="alert('This would open the Field Service Meeting Outline page.'); return false;" class="block w-full text-center bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors">
+                            View Outline
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 1 (for future content) -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col border-2 border-dashed border-slate-300">
+                    <div class="p-6 flex-grow flex flex-col items-center justify-center text-center">
+                        <div class="text-4xl text-slate-400 mb-2">+</div>
+                        <h3 class="text-md font-medium text-slate-500">Add New Outline</h3>
+                        <p class="text-slate-400 text-sm">
+                            Future resources will appear here.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
