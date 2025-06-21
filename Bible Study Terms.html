@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Service Meeting Outline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a clean, modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Style for the active tab to give it a distinct look */
+        .tab-button.active {
+            border-color: #3b82f6; /* Blue-500 */
+            color: #3b82f6;
+            background-color: #ffffff;
+        }
+        /* Hide tab content by default */
+        .tab-content {
+            display: none;
+        }
+        /* Show active tab content */
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+        <div class="p-6 md:p-8 bg-slate-50 border-b border-slate-200">
+            <!-- Header Section -->
+            <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 text-center">🗓️ Field Service Meeting Outline</h1>
+            <p class="text-center text-slate-600 mt-2"><strong>Theme:</strong> Adjusting Our Language to Reach the Heart</p>
+            <p class="text-center text-sm text-slate-500 mt-1"><strong>Focus:</strong> Using updated, friendlier expressions in our ministry</p>
+            <p class="text-center text-xs text-slate-400 mt-2">Based on: September 2025 Watchtower – “'Rightly Disposed' Ones Will Respond”</p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="border-b border-gray-200 px-6 md:px-8">
+            <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                <button onclick="changeTab(event, 'introduction')" class="tab-button active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-blue-600 hover:border-blue-300 focus:outline-none">
+                    Introduction
+                </button>
+                <button onclick="changeTab(event, 'main-point')" class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-blue-600 hover:border-blue-300 focus:outline-none">
+                    Main Point
+                </button>
+                <button onclick="changeTab(event, 'demonstration')" class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-blue-600 hover:border-blue-300 focus:outline-none">
+                    Demonstration
+                </button>
+                <button onclick="changeTab(event, 'conclusion')" class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-blue-600 hover:border-blue-300 focus:outline-none">
+                    Conclusion
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content Panels -->
+        <div class="p-6 md:p-8">
+            <!-- Introduction Panel -->
+            <div id="introduction" class="tab-content active">
+                <h2 class="text-xl font-semibold text-slate-700 mb-3">Introduction (1 minute)</h2>
+                <div class="space-y-4 text-slate-600 leading-relaxed">
+                    <p>Today, we’ll focus on just one aspect of how our approach in the ministry is evolving: the words we use.</p>
+                    <p>Specifically, we’ll talk about replacing some of the old terms that might feel formal or intimidating with language that feels natural and welcoming.</p>
+                </div>
+            </div>
+
+            <!-- Main Point Panel -->
+            <div id="main-point" class="tab-content">
+                <h2 class="text-xl font-semibold text-slate-700 mb-4">Main Point (2 minutes)</h2>
+                 <div class="overflow-x-auto">
+                    <table class="min-w-full border border-gray-200 rounded-lg">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Old Way</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">New Way</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Common Terms</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">“Bible study,” “Bible course,” “Teach you”</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-blue-600 font-medium">“Discussion,” “Get to know the Bible”</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
+                    <p class="text-sm text-blue-800">Using expressions like “Bible study” or “Bible course” may unintentionally sound like a class or commitment. And “Teach you” can feel one-sided or formal.</p>
+                </div>
+                <div class="mt-4 text-slate-600 space-y-3">
+                     <p>The new approach encourages terms like:</p>
+                    <ul class="list-disc list-inside space-y-2 pl-4">
+                        <li>“Would you like to have a Bible <span class="font-semibold text-slate-800">discussion?</span>”</li>
+                        <li>“We help people <span class="font-semibold text-slate-800">get to know the Bible.</span>”</li>
+                    </ul>
+                    <p>These expressions feel more like an open invitation—not an obligation.</p>
+                </div>
+            </div>
+
+            <!-- Demonstration Panel -->
+            <div id="demonstration" class="tab-content">
+                <h2 class="text-xl font-semibold text-slate-700 mb-4">Demonstration (Optional – 2 minutes)</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Old Way Card -->
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                        <h3 class="font-semibold text-red-800 mb-2">Old Way Example</h3>
+                        <p class="text-red-700 italic">“Hi, we’re offering a free Bible study. Would you like to join our Bible course?”</p>
+                    </div>
+                    <!-- New Way Card -->
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h3 class="font-semibold text-green-800 mb-2">New Way Example</h3>
+                        <p class="text-green-700 italic">“Hi, we’re sharing a thought from the Bible today. A lot of people enjoy short discussions that help them get to know the Bible better.”</p>
+                    </div>
+                </div>
+                 <div class="mt-6 p-4 bg-indigo-50 border-l-4 border-indigo-400 rounded-r-lg">
+                    <p class="text-sm text-indigo-800">Notice the second example sounds friendlier, and removes the feeling of pressure.</p>
+                </div>
+            </div>
+
+            <!-- Conclusion Panel -->
+            <div id="conclusion" class="tab-content">
+                <h2 class="text-xl font-semibold text-slate-700 mb-3">Conclusion (1 minute)</h2>
+                <div class="space-y-4 text-slate-600 leading-relaxed">
+                    <p>Jehovah draws people who are “rightly disposed.” (Acts 13:48) Our goal is to invite—not push.</p>
+                    <p>By simply adjusting the terms we use, we make it easier for someone to say “yes” to learning about God.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle tab switching functionality
+        function changeTab(event, tabId) {
+            // Get all elements with class="tab-content" and hide them
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => tab.classList.remove('active'));
+
+            // Get all elements with class="tab-button" and remove the "active" class
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Ensure the first tab is active on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.tab-button').click();
+        });
+    </script>
+
+</body>
+</html>
